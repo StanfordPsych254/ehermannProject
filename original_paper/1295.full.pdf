@@ -1,0 +1,1243 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html
+      xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Sign In </title>
+      <meta name="googlebot" content="NOODP" />
+      <meta name="HW.ad-path" content="/cgi/content/reprint/26/8/1295" />
+      <link rel="stylesheet" type="text/css" media="all" href="/shared/css/hw-global.css" />
+      <link rel="stylesheet" type="text/css" media="print" href="/shared/css/hw-print.css" />
+      <link rel="stylesheet" type="text/css" media="all"
+            href="/shared/css/standard-designs/design2/main.css" />
+      <link rel="stylesheet" type="text/css" media="all"
+            href="/publisher/css/hw-publisher-global.css" />
+      <link rel="stylesheet" type="text/css" media="all"
+            href="/local/css/hw-local-global.css" />
+      <link rel="stylesheet" type="text/css" media="all"
+            href="/local/css/hw-local-sidebars.css" />
+      <link rel="stylesheet" type="text/css" media="all"
+            href="/site/misc/css/local_styles.css" />
+      <link rel="stylesheet" type="text/css" media="all"
+            href="/shared/css/hw-page-login.css" />
+      <link rel="stylesheet" type="text/css" media="all"
+            href="/shared/css/standard-designs/design2/login-page.css" />
+      <link rel="stylesheet" type="text/css" media="all"
+            href="/publisher/css/hw-sagepub-page-login.css" />
+      <link rel="stylesheet" type="text/css" media="all"
+            href="/publisher/css/hw-publisher-leaderboard.css" /><script type="text/javascript" id="session-d148188146e1">var callbackToken='506D14D2B0F5D74';</script><meta content="0" name="session-search-history-count" id="session-d148188146e3" />
+      <meta content="0" name="session-marked-citation-count" id="session-d148188146e4" />
+      <meta content="" name="session-marked-citations" id="session-d148188146e5" /><script type="text/javascript" src="/shared/js/jquery-min.js"></script><script type="text/javascript" src="/shared/js/fingerprint.js"></script><script type="text/javascript" src="/shared/js/hw-shared.js"></script><script type="text/javascript" src="/publisher/js/hw-sagepub-shared.js"></script><script type="text/javascript" src="/site/misc/js/hw-publisher-custom.js"></script><script type="text/javascript" src="/shared/js/gen/local-js-settings.js"></script><script type="text/javascript" src="/shared/js/date_utils.js"></script><script type="text/javascript" src="/shared/js/catalog_client.js"></script></head>
+   <body>
+      <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5M58KS" height="0" width="0"
+                 style="display:none;visibility:hidden"></iframe></noscript><script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-5M58KS');</script><div class="hw-gen-page pagetype-content" id="pageid-login"><script type="text/javascript">
+	var CM8Server = "sage.checkm8.com";
+	var CM8Cat = "social_science_humanities.psychology_counseling.pss";
+	var CM8Profile="50.131.45.205";
+	</script><script type="text/javascript"
+                 src="http://sagedigital.checkm8.com/adam/cm8adam_1_call.js"></script><div class="ehs-leaderboard-ads" id="ehs-leaderboard-ads">
+            
+            <ul>
+               
+               <li>
+                  					<script type="text/javascript" language="javascript">CM8ShowAd("Leaderboard");
+</script>
+                  					<noscript>
+                     					  <a href="http://sage.checkm8.com/adam/ep/click/social_science_humanities.psychology_counseling.pss/Top?cat=social_science_humanities.psychology_counseling.pss">
+                        					<img src="http://sage.checkm8.com/adam/noscript?cat=social_science_humanities.psychology_counseling.pss&amp;format=Leaderboard"
+                             nosend="1"
+                             border="0"
+                             align="left"
+                             alt="Advertisement" />
+                        					  </a>
+                     	
+                  </noscript>
+                  
+               </li>
+               
+            </ul>
+            
+         </div>
+         <div class="leaderboard-clear sb-div"></div>
+         <div id="header-initialNav">
+            
+            
+            <div id="header-authString">
+               
+               <div class="header-authStringImgLeft"></div>
+               
+               <div id="authstring">
+                  
+                  <ul>
+                     
+                     <li><a href="/login?uri=http://pss.sagepub.com/content/26/8/1295.full.pdf">Sign In</a> to gain access to subscriptions and/or My Tools.
+                     </li>
+                     
+                  </ul>           
+                  
+               </div>
+               
+               <ul class="h-auth-list">
+                  
+                  
+                  <li class="first">
+                     <img height="13" width="12" alt="sign in icon" src="/publisher/icons/Signin_img.gif" />
+                     <a href="/login">Sign In</a>
+                     
+                  </li>
+                  
+                  <li class="normal">|</li>
+                  
+                  <li class="normal">
+                     <a href="http://online.sagepub.com/site/misc/tools.xhtml">My Tools</a>
+                     
+                  </li>
+                  
+                  
+                  <li class="normal">|</li>
+                  
+                  <li class="normal">
+                     <a href="/feedback">Contact Us</a>
+                     
+                  </li>
+                  
+                  <li class="normal">|</li>
+                  
+                  		
+                  <li class="last"><a href="/switch/help?fromid=pageid-login&amp;fromres=&amp;fromsite=Psychological%20Science&amp;is-sage-open=&amp;returnurl=http%3A%2F%2Fpss.sagepub.com%2Fcontent%2F26%2F8%2F1295.full.pdf">HELP</a></li>
+                  
+               </ul>
+               
+               <div class="header-authStringImgRight"></div>
+               
+            </div>
+            
+            
+            <div id="header-SJO">
+               <a href="http://online.sagepub.com">
+                  <img alt="SJO banner" src="/publisher/icons/SJO_banner.gif" />
+                  </a>
+               
+            </div>
+            
+            <div id="header-search">
+               
+               <div>
+                  
+                  
+                  <div>
+                     
+                     <form action="http://online.sagepub.com/search/results" id="portal-qs-form"
+                           method="get">
+                        <label id="header-search-label" for="header-input">Search all journals</label>
+                        <input type="hidden" name="submit" value="yes" />
+                        <input type="hidden" name="src" value="hw" />
+                        <input type="hidden" name="andorexactfulltext" value="and" />
+                        <span class="sheader_l"></span>
+                        <span class="sheader">
+                           								<input type="text" id="header-input" name="fulltext" title="Search all journals"
+                                  value="" />
+                           </span>
+                        <span class="sheader_r">
+                           <input type="image" src="/publisher/icons/srch_r.gif" alt="Initiate Basic Search"
+                                  value="GO" />
+                           </span>
+                        
+                     </form>
+                     
+                  </div>
+                  
+                  <div id="header-browse">
+                     
+                     <ul>
+                        
+                        <li class="header-browseSpan headerFirst">
+                           <a href="http://online.sagepub.com/search">Advanced Search <img src="/publisher/icons/header-browseGo.gif" alt="Go" /></a>
+                           
+                        </li>
+                        
+                        <li class="header-browseSpan headerMiddle">
+                           <a href="http://online.sagepub.com/search/history ">Search History <img src="/publisher/icons/header-browseGo.gif" alt="Go" /></a>
+                           
+                        </li>
+                        
+                        
+                        <li class="header-browseSpan headerLast">
+                           <a href="http://online.sagepub.com/browse/by/title">Browse Journals <img src="/publisher/icons/header-browseGo.gif" alt="Go" /></a>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </div>
+                  
+               </div>
+               
+            </div>
+            
+            <div id="header-Sign">
+               
+            </div>
+            
+            
+            <div id="header-Uni">
+               		
+               
+            </div>
+            
+         </div>
+         <div id="header">
+            
+            <div id="main-logo"> </div>
+            
+            <p id="skip-link">
+               <a href="#content-block">Skip to main page content</a>
+               
+            </p>
+            
+            <ul class="button-list header-buttons">
+               
+               <li class="first"><a href="/" title="Home"><span>Home</span></a></li>
+               
+               
+               <li><a title="OnlineFirst" href="/content/early/recent"><span>OnlineFirst</span></a></li>
+               
+               <li><a href="/content" title="All Issues"><span>All Issues</span></a></li>
+               
+               
+               
+               <li><a href="/site/subscriptions/" title="Subscribe"><span>Subscribe</span></a></li>
+               
+               <li class="img-button"><a href="/rss" title="RSS "><span>RSS </span>
+                     
+                     <img src="/shared/img/common/rss.gif" alt="rss" /></a>
+                  
+                  
+                  
+               </li>
+               
+               <li class="last"><a href="/cgi/alerts" title="Email Alerts"><span>Email Alerts</span></a></li>
+               
+               
+               
+               
+               
+            </ul>
+            
+            
+            <div class="leaderboard-clear sb-div"></div>
+            
+            
+            <div class="banner-ads">
+               
+               <ul>
+                  			
+                  <li>
+                     					<script type="text/javascript" language="javascript">CM8ShowAd("title_half_banner");</script>
+                     					<noscript>
+                        					  <a href="http://sage.checkm8.com/adam/ep/click/social_science_humanities.psychology_counseling.pss/Top?cat=social_science_humanities.psychology_counseling.pss">
+                           					<img src="http://sage.checkm8.com/adam/noscript?cat=social_science_humanities.psychology_counseling.pss&amp;format=Title_Half_Banner"
+                                nosend="1"
+                                border="0"
+                                align="left"
+                                alt="Advertisement" />
+                           					  </a>
+                        	
+                     </noscript>
+                     			
+                  </li>
+                  
+               </ul>
+               
+               
+            </div>
+            
+            <div class="leaderboard-clear sb-div"></div>
+            
+            
+            <div class="bar">
+               
+               
+               <div class="header-qs">
+                  
+                  <form id="journal-qs-form" class="searchbox" action="/search/results" method="get">
+                     
+                     <div id="headerSearch">
+                        <label for="header-qs-input" id="header-qs-search-label">Search this journal</label>
+                        <span class="sbox_l"></span>
+                        <span class="sbox">
+                           					<input type="text" id="header-qs-input" name="fulltext" title="Search this journal"
+                                  value="" />
+                           </span>
+                        <span class="sbox_r">
+                           					<input type="image" src="/publisher/icons/srch_r.gif" alt="Initiate Basic Search"
+                                  value="GO" />
+                           </span>
+                        <input type="hidden" name="submit" value="yes" />
+                        	<input value="sppss" type="hidden" name="journal_set" />
+                        <input type="hidden" name="src" value="selected" />
+                        <input type="hidden" name="andorexactfulltext" value="and" />
+                        
+                     </div>
+                     
+                  </form>
+                  
+                  <div class="adv-search-link"><a href="/search">Advanced Journal Search »</a></div>
+                  
+               </div>
+               
+               
+               <div class="bar-inner"></div>
+               
+            </div>
+            
+         </div>
+         <div id="blank-above-impact-factor"></div>
+         <div id="impact-factor">
+            			
+            <div id="impact-factor-row">
+               			
+               <div id="if-left"></div>
+               			
+               <div id="if-right"></div>
+               			<br style="clear:both;" />
+               		 
+            </div>
+            		
+         </div>
+         <div id="blank-below-impact-factor"></div><img src="/shared/img/pages/login/login_hit_hidden.gif?timestamp=2016-01-17T12:31:31.589-08:00"
+              id="hw-login-tracking-gif"
+              width="2"
+              height="2"
+              alt=" " /><div id="content-block">
+            <div id="hw-login-msg-box">
+               
+               
+               <div id="hw-login-msg-box-text">
+                  
+                  
+                  
+                  <div>
+                     <span>
+                        
+                        
+                        
+                        <p xmlns="">
+                           
+                           <strong>This item requires a subscription 
+                              
+                              to Psychological Science.
+                           </strong>
+                           
+                        </p>
+                        
+                        </span>
+                     
+                  </div>
+                  
+               </div> 
+               
+            </div>
+            <div id="hw-login-item-group">
+               
+               <div id="hw-login-content-item-group">
+                  <img src="/content/26/8.cover.gif" id="hw-login-cover-image" alt="Cover" width="59"
+                       height="80" />  
+                  
+                  <div id="hw-login-content-item"><span id="hw-login-item-view">Full Text (PDF)</span>
+                     
+                     
+                     <div class="cit has-earlier-version hw-pub-property-open_data">
+                        <div class="cit-metadata"><span class="cit-first-element cit-section">Research Articles<span class="cit-sep cit-sep-after-article-section">:</span> </span><ul class="cit-auth-list">
+                              <li class="first-item"><span class="cit-auth cit-auth-type-author">Stav Atir</span><span class="cit-sep cit-sep-separator">, </span></li>
+                              <li><span class="cit-auth cit-auth-type-author">Emily Rosenzweig</span><span class="cit-sep cit-sep-separator">, </span></li>
+                              <li class="last-item"><span class="cit-sep cit-sep-last-separator">and </span><span class="cit-auth cit-auth-type-author">David Dunning</span></li>  
+                           </ul><span class="cit-title">When Knowledge Knows No Bounds<span class="cit-sep cit-sep-after-article-title">: </span><span class="cit-subtitle">Self-Perceived Expertise Predicts Claims of Impossible Knowledge </span> </span> <cite><abbr title="Psychological Science" class="site-title">Psychological Science</abbr> <span class="cit-print-date">August 2015 </span><span class="cit-vol">26<span class="cit-sep cit-sep-after-article-vol">: </span></span><span class="cit-pages"><span class="cit-first-page">1295</span><span class="cit-sep">-</span><span class="cit-last-page">1303</span></span><span class="cit-sep cit-sep-after-article-pages">, </span><span class="cit-ahead-of-print-date"><span class="cit-sep cit-sep-before-article-ahead-of-print-date">first published on </span>July 14, 2015 </span><span class="cit-doi"><span class="cit-sep cit-sep-before-article-doi">doi:</span>10.1177/0956797615588195 </span></cite>  
+                        </div>
+                        <div class="cit-extra">
+                           <ul class="cit-views">
+                              <li class="first-item"><a href="/content/26/8/1295.abstract" rel="abstract">Abstract</a></li>
+                              <li><a href="/content/26/8/1295.full" rel="full-text">Full Text</a></li>
+                              <li class="last-item"><a href="/content/26/8/1295.full.pdf+html" rel="full-text.pdf">Full Text (PDF)</a></li>
+                           </ul>  
+                        </div> 
+                     </div>
+                     
+                  </div>
+                  
+               </div>
+               
+               
+               
+            </div>
+            <div id="hw-login-instruction">To view this item, select one of the options below:</div>
+            <div id="hw-aps-member-login" class="hw-login-extra-group-above-signin">
+               
+               <div id="hw-aps-member-login-header" class="hw-login-section-header"><img alt="*" width="9" height="15" src="/shared/img/pages/login/redtri.gif" />
+                  		APS Member Sign In
+               </div>
+               
+               <ul class="hw-login-option-list hw-login-section-body">
+                  
+                  <li>
+                     This journal is available to Association for Psychological Science members. <strong><a href="http://www.psychologicalscience.org/oauth/authorize?response_type=token&amp;client_id=sagedemo&amp;redirect_uri=http%3A%2F%2Fonline.sagepub.com%2Foauth2%2Fcode%2F&amp;state=http%3A%2F%2Fpss.sagepub.com%2Fcontent%2F26%2F8%2F1295.full.pdf">Sign in here</a></strong> using your last name and member ID.
+                     
+                  </li>
+                  
+               </ul>
+               
+            </div>
+            <div id="hw-login-sign-in-group">
+               
+               <div id="hw-login-sign-in-header" class="hw-login-section-header">
+                  <img alt="*" width="9" height="15" src="/shared/img/pages/login/redtri.gif" /> 
+                  Sign In
+               </div>
+               <div class="hw-login-option-list hw-login-section-body"><strong>Already  an individual subscriber?</strong><br />
+                  If so, please sign in to Psychological Science with your User Name and Password.
+                  
+               </div>
+               
+               <div id="hw-login-sign-in-box">
+                  
+                  <form action="/content/26/8/1295.full.pdf" method="post"
+                        class="hw-ac-standalone-form hw-login-form">
+                     
+                     
+                     <fieldset>
+                        <input value="" type="hidden" name="login_referer" />
+                        
+                        <legend class="ext-legend">Sign In</legend>
+                        <span>
+                           <label for="username"> 
+                              User Name
+                              </label>
+                           <input type="text" name="username" value="" size="10" maxlength="150" tabindex="1"
+                                  id="username" />
+                           </span>
+                        
+                        <span>
+                           <label for="password">Password</label>
+                           <input type="password" name="code" value="" size="10" maxlength="25" tabindex="2"
+                                  id="password" />
+                           </span>
+                        <span class="login-submit">
+                           <input type="submit" name="signin" value="Sign In" tabindex="3" /></span>
+                        
+                        <span class="save-pwd">
+                           <input type="checkbox" name="storepwd" value="yes" id="savepwd" />
+                           <label for="savepwd">Remember my user name &amp; password.</label>
+                           </span>
+                        
+                     </fieldset>
+                     
+                     <div id="hw-login-forgot-pwd">
+                        <a href="http://online.sagepub.com/cgi/recnamepwd">Forgot</a>
+                        your user name or password?
+                        
+                     </div>
+                     
+                     <ul class="hw-login-option-list">
+                        
+                        
+                        
+                        <li>
+                           <a href="/help/subscriptions/privacy-policy#cookie-problems">Can't get past this page?</a> 
+                           
+                        </li>
+                        
+                        <li>
+                           <a href="/help/subscriptions/privacy-policy">Help with Cookies.</a> 
+                           
+                        </li>
+                        
+                        <li>
+                           <a href="/site/subscriptions">Need to Activate?</a> 
+                           
+                        </li>
+                        
+                        
+                        
+                     </ul>
+                     
+                  </form>
+                  
+               </div>
+               
+               
+               
+            </div>
+            <div id="hw-login-ppv-group" class="hw-login-extra-group">
+               
+               <div id="hw-login-ppv-header" class="hw-login-section-header"><img alt="*" width="9" height="15" src="/shared/img/pages/login/redtri.gif" /> 
+                  Purchase Short-Term Access
+               </div>
+               
+               
+               <ul id="hw-login-ppv-options" class="hw-login-option-list">
+                  
+                  <li id="hw-login-ppa-option"><a href="/cookietest?for=ppv&amp;uri=%2Fcgi%2Fsecure_ppv%3Fjcode%3Dsppss%26resource_id%3Dsppss%3B0956797615588195%26type%3Dppv%26ppv_type%3Darticle%26url%3Dhttp%253A%252F%252Fpss.sagepub.com%252Fcontent%252F26%252F8%252F1295.full.pdf">Pay per Article
+                        </a> 
+                     - You may purchase <strong>this article</strong> for US$35.00. You must download your purchase, which is yours to keep, within  <span>24 hours</span>.
+                  </li>
+                  
+                  
+                  
+                  <li id="hw-login-ppv-regain-option"><a href="/cookietest?for=ppv&amp;uri=%2Fcgi%2Fsecure_ppvregain%3Furl%3Dhttp%253A%252F%252Fpss.sagepub.com%252Fcontent%252F26%252F8%252F1295.full.pdf">Regain Access</a> - You can regain 
+                     access to a recent  Pay per Article purchase  if your access 
+                     period has not yet expired.
+                  </li>
+                  
+                  
+                  
+               </ul>
+               
+               
+               
+            </div>
+            <div id="hw-login-shib-athens-group" class="hw-login-extra-group">
+               
+               
+               <div id="hw-login-openathens-header" class="hw-login-section-header"><img alt="*" width="9" height="15" src="/shared/img/pages/login/redtri.gif" />
+                  OpenAthens Users
+                  
+               </div>
+               <ul class="hw-login-option-list hw-login-section-body">
+                  
+                  <li><a href="http://openathens.highwire.org/initiate-login?returnURL=http%3A%2F%2Fpss.sagepub.com%2Fcontent%2F26%2F8%2F1295.full.pdf&amp;subcode=sagepub">
+                        	        Sign in via OpenAthens
+                        	    </a>: If your organization uses OpenAthens, you can log in using your OpenAthens username and password. Contact your library for
+                     more details.
+                  </li>
+                  
+                  <li><a href="http://auth.athensams.net/orglist.php">List of OpenAthens registered sites</a>, including contact details.
+                  </li>
+                  
+               </ul>
+               <div id="hw-login-shib-athens-group" class="hw-login-extra-group">
+                  	        
+                  <div id="hw-login-shib-only-header" class="hw-login-section-header">
+                     	            <img alt="*" width="9" height="15" src="/shared/img/pages/login/redtri.gif" />
+                     	            Login via Your Institution
+                     	        
+                  </div>
+                  	        
+                  <ul class="hw-login-option-list hw-login-section-body">
+                     	            
+                     <li>
+                        	                <a href="/login/shibboleth?uri=http%3A%2F%2Fpss.sagepub.com%2Fcontent%2F26%2F8%2F1295.full.pdf&amp;subcode=sagepub&amp;env=prod">Login via your institution</a>
+                        	                : You may be able to gain access using your login credentials for your institution. Contact your library
+                        if you do not have a username and password.
+                        	            
+                     </li>
+                     	        
+                  </ul>
+                  
+               </div> 
+               
+            </div>
+            <div id="hw-login-sign-up-group" class="hw-login-extra-group">
+               
+               <div id="hw-login-sign-up-header" class="hw-login-section-header"><img alt="*" width="9" height="15" src="/shared/img/pages/login/redtri.gif" />
+                  Subscribe/Recommend
+               </div>
+               
+               <ul class="hw-login-option-list hw-login-section-body">
+                  
+                  <li><a href="/subscriptions">Click here</a> to subscribe to the print and/or online journal.
+                  </li>
+                  <li><a href="http://surveys.sagepublications.com/Survey.aspx?surveyid=3450&amp;link=sag_j&amp;cc=sj&amp;formtype=librec&amp;from=TO&amp;contact=bit.ly/lib_us&amp;product=Psychological%20Science">Click here</a> to recommend to your library.
+                  </li>
+                  
+               </ul>
+               
+            </div>
+            <div id="hw-login-patient-access-ccc" class="hw-login-extra-group">
+               
+               <div class="hw-login-section-header"><img alt="*" width="9" height="15" src="/shared/img/pages/login/redtri.gif" />
+                  Patient Access
+                  
+               </div>
+               
+               <ul class="hw-login-option-list hw-login-section-body">
+                  
+                  <li><a href="https://s100.copyright.com/AppDispatchServlet?publisherName=sage&amp;publication=J646&amp;title=When%20Knowledge%20Knows%20No%20Bounds%3ASelf-Perceived%20Expertise%20Predicts%20Claims%20of%20Impossible%20Knowledge&amp;publicationDate=08%2F01%2F2015&amp;author=Stav%20Atir%2C%20Emily%20Rosenzweig%2C%20David%20Dunning&amp;startPage=1295&amp;contentID=10.1177%2F0956797615588195&amp;orderBeanReset=true&amp;publicationType=STM&amp;trimSize=8%203%2F8%20x%2010%207%2F8&amp;copyright=Association%20for%20Psychological%20Science&amp;isn=0956-7976&amp;endPage=1303&amp;volumeNum=26&amp;issueNum=8&amp;pa=yes&amp;curl=http://pss.sagepub.com//content/26/8/1295.full.pdf&amp;article_permission=yes">patientACCESS</a> - Patients desiring access to articles
+                  </li>
+                  
+               </ul>
+               
+            </div>
+         </div>
+         <div id="col-2">
+            
+            
+            <div class="content-box" id="article-cb-main">
+               <div class="cb-contents">
+                  <h3 class="cb-contents-header"><span>This Article</span></h3>
+                  <div class="cb-section cb-slug">
+                     <ol>
+                        
+                        
+                        
+                        
+                        <li>
+                           <div id="slugline">
+                              
+                              
+                              <span class="slug-metadata-note ahead-of-print">
+                                 	
+                                 Published online before print
+                                 
+                                 <span class="slug-ahead-of-print-date">July 14, 2015</span>,
+                                 doi:
+                                 <span title="10.1177/0956797615588195" class="slug-doi">10.1177/0956797615588195
+                                    </span>
+                                 </span>
+                              
+                              <cite>
+                                 <abbr title="Psychological Science" class="slug-jnl-abbrev">
+                                    Psychological Science</abbr><span class="slug-pub-date">
+                                    	    August 2015 
+                                    </span>
+                                 <span class="slug-vol">
+                                    vol. 26 
+                                    </span><span class="slug-issue">
+                                    no. 8 
+                                    </span><span class="slug-pages">
+                                    1295-1303
+                                    </span>
+                                 </cite>
+                              
+                              
+                              
+                           </div>
+                        </li>
+                        
+                        
+                        
+                     </ol>
+                  </div>
+                  <div class="cb-section cb-views">
+                     <ol>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="/content/26/8/1295.full.pdf" class="pdf-direct-link">Show PDF in full window</a></li>
+                        
+                        
+                        
+                        <li class="abstract-view-link primary"><a href="/content/26/8/1295.abstract" rel="view-abstract">Abstract</a><span class="viewspecificaccesscheck sppss;26/8/1295 abstract"></span></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="notice full-text-view-link primary"><a href="/content/26/8/1295.full" rel="view-full-text">Full Text</a><span class="viewspecificaccesscheck sppss;26/8/1295 full"></span></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="notice full-text-pdf-view-link primary"><span class="variant-indicator">» <span>Full Text (PDF)</span></span><span class="viewspecificaccesscheck sppss;26/8/1295 reprint"></span></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <div><span id="pap-all-versions-label">All Versions of this Article:</span><ol class="sagepub-all-version-list">
+                              <li class="current-li"><span><img src="/shared/img/misc/rightchevron.gif" alt="current version image indicator" />Version of Record</span> - Aug 5, 2015
+                              </li>
+                              <li><a href="/content/early/2015/07/14/0956797615588195">OnlineFirst Version of Record</a> - Jul 14, 2015
+                              </li>
+                           </ol><span class="version-list-footer">
+                              
+                              <a xmlns="" href="http://online.sagepub.com/site/sphelp/vorhelp.xhtml">What's this?</a>
+                              </span></div>
+                        
+                        
+                        
+                        
+                        									
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                     </ol>
+                  </div>
+                  <div class="cb-section collapsible" id="cb-art-svcs">
+                     <h4 class="cb-section-header"><span>Services</span></h4>
+                     <ol>
+                        
+                        
+                        
+                        
+                        
+                        <li class="mail-a-friend-link icon-link"><a href="/email?gca=sppss%3B26%2F8%2F1295&amp;current-view-path=/content/26/8/1295.full.pdf">
+                              Email this article to a colleague</a></li>
+                        
+                        
+                        
+                        <li class="alert-link icon-link"><a href="/cgi/alerts/ctalert?alertType=citedby&amp;addAlert=cited_by&amp;cited_by_criteria_resid=sppss%3B26%2F8%2F1295&amp;saveAlert=no&amp;return-type=article&amp;return_url=http://pss.sagepub.com/content/26/8/1295.full.pdf">Alert me when this article is cited</a></li>
+                        <li class="alert-link icon-link"><a href="/cgi/alerts/ctalert?alertType=correction&amp;addAlert=correction&amp;correction_criteria_value=26/8/1295&amp;saveAlert=no&amp;return-type=article&amp;return_url=http://pss.sagepub.com/content/26/8/1295.full.pdf">Alert me if a correction is posted</a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="usage-stats-link icon-link"><a href="/articleusage?gca=sppss;26/8/1295" rel="nofollow">Article Metrics</a></li>
+                        
+                        
+                        
+                        <li class="similar-link"><a href="/search?qbe=sppss;0956797615588195&amp;citation=Atir%20et%20al.%2026%20%288%29:%201295&amp;src=selected&amp;journal_set=sppss&amp;submit=yes">Similar articles in this journal</a></li>
+                        
+                        
+                        
+                        
+                        <li class="similar-link"><a href="/external-ref?access_num=26174782&amp;link_type=MED_NBRS"
+                              class="similar-link">Similar articles in PubMed</a></li>
+                        
+                        
+                        
+                        
+                        <li class="cit-man-link icon-link cite-link"><a href="/citmgr?gca=sppss%3B26%2F8%2F1295">Download to citation manager</a></li>
+                        
+                        
+                        
+                        
+                        <li><a class="request-permissions"
+                              href="https://s100.copyright.com/AppDispatchServlet?publisherName=sage&amp;publication=J646&amp;title=When%20Knowledge%20Knows%20No%20Bounds%3ASelf-Perceived%20Expertise%20Predicts%20Claims%20of%20Impossible%20Knowledge&amp;publicationDate=08%2F01%2F2015&amp;author=Stav%20Atir%2C%20Emily%20Rosenzweig%2C%20David%20Dunning&amp;startPage=1295&amp;contentID=10.1177%2F0956797615588195&amp;orderBeanReset=true&amp;publicationType=STM&amp;trimSize=8%203%2F8%20x%2010%207%2F8&amp;copyright=Association%20for%20Psychological%20Science&amp;isn=0956-7976&amp;endPage=1303&amp;volumeNum=26&amp;issueNum=8&amp;article_permission=yes"
+                              rel="external-nw">Request Permissions</a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="http://www.sagepub.com/journalsReprints.nav">Request Reprints</a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="/content/26/8/1295.full.pdf?patientinform-links=yes&amp;legid=sppss;26/8/1295#patientinform-links"
+                              id="cb-patientinform">Load <em>patient</em>INFORMation</a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                     </ol>
+                  </div>
+                  <div class="cb-section collapsible" id="cb-art-cit">
+                     <h4 class="cb-section-header"><span>Citing Articles</span></h4>
+                     <ol>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="/content/26/8/1295.full.pdf?cited-by=yes&amp;legid=sppss;26/8/1295#cited-by"
+                              id="cb-hw-citing-articles">Load citing article information</a></li>
+                        
+                        
+                        
+                        
+                        <li><a href="/scopus-links/sppss/26/8/1295?access_num=/sppss/26/8/1295"
+                              rel="external-nw"
+                              id="cb-scopus-citing-articles">Citing articles via Scopus</a></li>
+                        
+                        
+                        
+                        <li><a href="/external-ref?access_num=%2Fsppss%2F26%2F8%2F1295&amp;link_type=ISI_CITING&amp;accnum_type=native"
+                              rel="external-nw"
+                              id="cb-isi-citing-articles">Citing articles via Web of Science</a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                     </ol>
+                  </div>
+                  <div class="cb-section collapsible" id="cb-art-gs">
+                     <h4 class="cb-section-header"><span>Google Scholar</span></h4>
+                     <ol>
+                        
+                        
+                        
+                        <li><a href="http://scholar.google.com/scholar?q=%22author%3AAtir%20author%3AS.%22">Articles by  Atir, S.</a></li>
+                        <li><a href="http://scholar.google.com/scholar?q=%22author%3ADunning%20author%3AD.%22">Articles by  Dunning, D.</a></li>
+                        
+                        
+                        
+                        
+                        <li><a href="/external-ref?access_num=http://pss.sagepub.com/content/26/8/1295.abstract&amp;link_type=GOOGLESCHOLARRELATED">Search for related content</a></li>
+                        
+                        
+                        
+                     </ol>
+                  </div>
+                  <div class="cb-section collapsible" id="cb-art-pm">
+                     <h4 class="cb-section-header"><span>PubMed</span></h4>
+                     <ol>
+                        
+                        
+                        
+                        <li><a href="/external-ref?access_num=26174782&amp;link_type=PUBMED">PubMed citation</a></li>
+                        
+                        
+                        
+                        <li><a href="/external-ref?access_num=Atir%20S&amp;link_type=AUTHORSEARCH">Articles by  Atir, S.</a></li>
+                        <li><a href="/external-ref?access_num=Dunning%20D&amp;link_type=AUTHORSEARCH">Articles by  Dunning, D.</a></li>
+                        
+                        
+                        
+                        <li>
+                           <div id="cb-entrez-links-placeholder"><a href="/entrez-links/26174782"></a></div>
+                        </li>
+                        
+                        
+                        
+                     </ol>
+                  </div>
+                  <div class="cb-section collapsible" id="cb-art-rel">
+                     <h4 class="cb-section-header"><span>Related Content</span></h4>
+                     <ol>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="/content/26/8/1295.full.pdf?related-urls=yes&amp;legid=sppss;26/8/1295#related-urls"
+                              id="cb-related-urls">Load related web page information</a></li>
+                        
+                        
+                        
+                        
+                     </ol>
+                  </div>
+               </div>
+            </div>
+            
+            
+            
+         </div>
+         <div id="col-3">
+            
+            <div id="navPanel">
+               
+               <ol>
+                  
+                  <li class="top"><img src="/publisher/icons/sub-man.gif" alt="Submit a Manuscript" border="0" /><a href="http://www.sagepub.com/journals/Journal201962/manuscriptSubmission">Submit a Manuscript</a></li>
+                  
+                  
+                  <li class="norm"><img src="/publisher/icons/pdf.png" alt="Free Sample Copy" border="0" /><a href="/sample">Free Sample Copy</a></li>
+                  
+                  <li class="norm"><img src="/publisher/icons/eml-alt.gif" alt="Email Alerts" border="0" /><a href="/cgi/alerts">Email Alerts</a></li>
+                  
+                  <li class="norm"><img src="/publisher/icons/RSS-Fee.gif" alt="Rss Feeds" border="0" /><a href="/rss">RSS feed</a></li>
+                  
+                  
+               </ol>
+               
+            </div>
+            <div class="collapsible default-closed col-3expandMenu" id="nothing">
+               
+               <h4>More about this journal</h4>
+               
+               <ul class="button-list pub-links" id="menu1">
+                  
+                  <li class="first">
+                     <a href="http://www.sagepub.com/journals/Journal201962/title" title="about"
+                        alt="about"
+                        rel="external-nw">
+                        About the Journal</a>
+                     
+                  </li>
+                  
+                  <li><a href="http://www.sagepub.com/journals/Journal201962/boards" rel="external-nw"
+                        title="Editorial Board"><span>Editorial Board</span></a></li>
+                  
+                  <li><a href="http://www.sagepub.com/journals/Journal201962/manuscriptSubmission"
+                        rel="external-nw"
+                        title="Manuscript Submission"><span>Manuscript Submission</span></a></li>
+                  
+                  <li><a href="http://www.sagepub.com/journals/Journal201962/abstractIndexing"
+                        rel="external-nw"
+                        title="Abstracting/Indexing"><span>Abstracting/Indexing</span></a></li>
+                  
+                  <li><a href="http://www.sagepub.com/journals/Journal201962/subscribe"
+                        rel="external-nw"
+                        title="Subscribe"><span>Subscribe</span></a></li>
+                  
+                  <li><a href="/site/subscriptions" rel="external-nw" title="Account Manager"><span>Account Manager</span></a></li>
+                  
+                  
+                  <li><a href="http://surveys.sagepublications.com/Survey.aspx?surveyid=3450&amp;link=sag_j&amp;cc=sj&amp;formtype=librec&amp;from=TO&amp;contact=bit.ly/lib_us&amp;product=Psychological%20Science"
+                        rel="external-nw"
+                        title="Recommend to Library"><span>Recommend to Library</span></a></li>
+                  
+                  <li><a href="http://www.sagepub.com/journalsProdAdv.nav?prodId=Journal201962"
+                        rel="external-nw"
+                        title="Advertising"><span>Advertising</span></a></li>
+                  
+                  <li><a href="http://www.sagepub.com/journalsReprints.nav" rel="external-nw"
+                        title="Reprints"><span>Reprints</span></a></li>
+                  
+                  <li class="last">
+                     <a title="permissions" alt="Permissions"
+                        href="http://www.sagepub.com/journalsPermissions.nav"
+                        rel="external-nw"> Permissions</a>
+                     
+                     
+                  </li>
+                  
+                  
+               </ul>
+               
+            </div>
+            
+            <div class="col-3expandMenu2">
+               
+               <h4>
+                  <a href="javascript:poptoggle('menu2');">
+                     <img id="pmenu2" alt="expand collapse button" src="/publisher/icons/minus.png" />Other journals by APS</a>
+                  
+               </h4>
+               
+               <div class="expandblock" id="menu2">
+                  
+                  <ul id="menu2">
+                     
+                     <li class="first">
+                        <a href="http://cpx.sagepub.com" rel="external-nw" style="color:#084236;"
+                           title="Clinical Psychological Science">Clinical Psychological Science</a>
+                        
+                     </li>
+                     
+                     <li class="last">
+                        <a href="http://cdp.sagepub.com" rel="external-nw" style="color:#097D4C;"
+                           title="Current Directions in Psychological Science">
+                           <span>Current Directions in Psychological Science</span>
+                           </a>
+                        
+                     </li>
+                     
+                     <li class="last">
+                        <a href="http://psi.sagepub.com" rel="external-nw" style="color:#24509B;"
+                           title="Psychological Science in the Public Interest ">
+                           <span>Psychological Science in the Public Interest </span>
+                           </a>
+                        
+                     </li>
+                     
+                     <li class="last">
+                        <a href="http://pps.sagepub.com" rel="external-nw" style="color:#F5A415;"
+                           title="Perspectives on Psychological Science">Perspectives on Psychological Science</a>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               
+            </div>
+            
+            <div class="sidebar-icon-group">
+               
+               <div id="societyImg">
+                  <ol>
+                     <li class="soc-image"><a href="http://www.psychologicalscience.org"><img alt="society image" src="/local/img/APS.gif" /></a></li>
+                     <li class="soc-link"><a href="http://www.psychologicalscience.org">Association for Psychological Science</a></li>
+                     <li class="soc-last-line"></li>
+                  </ol>
+               </div>
+               
+            </div>
+            <div class="col-3adverTower">
+               
+               <ul>
+                  
+                  
+                  <li>
+                     <script type="text/javascript" language="javascript">CM8ShowAd("skyscraper");</script>
+                     <noscript>
+                        <a href="http://sage.checkm8.com/adam/ep/click/social_science_humanities.psychology_counseling.pss/Top?cat=social_science_humanities.psychology_counseling.pss">
+                           <img src="http://sage.checkm8.com/adam/noscript?cat=social_science_humanities.psychology_counseling.pss&amp;format=skyscraper"
+                                nosend="1"
+                                border="0"
+                                align="left"
+                                alt="Advertisement" />
+                           </a>
+                        
+                     </noscript>
+                     
+                  </li>
+                  
+                  <li>
+                     <script type="text/javascript" language="javascript">CM8ShowAd("column3_160x40");</script>
+                     <noscript>
+                        <a href="http://sage.checkm8.com/adam/ep/click/social_science_humanities.psychology_counseling.pss/Top?cat=social_science_humanities.psychology_counseling.pss">
+                           <img src="http://sage.checkm8.com/adam/noscript?cat=social_science_humanities.psychology_counseling.pss&amp;format=column3_160x40"
+                                nosend="1"
+                                border="0"
+                                align="left"
+                                alt="Advertisement" />
+                           </a>
+                        
+                     </noscript>
+                     
+                  </li>
+                  
+                  <li>
+                     <script type="text/javascript" language="javascript">CM8ShowAd("column3_160x140_top");</script>
+                     <noscript>
+                        <a href="http://sage.checkm8.com/adam/ep/click/social_science_humanities.psychology_counseling.pss/Top?cat=social_science_humanities.psychology_counseling.pss">
+                           <img src="http://sage.checkm8.com/adam/noscript?cat=social_science_humanities.psychology_counseling.pss&amp;format=column3_160x40_top"
+                                nosend="1"
+                                border="0"
+                                align="left"
+                                alt="Advertisement" />
+                           </a>
+                        
+                     </noscript>
+                     
+                  </li>
+                  
+                  <li>
+                     <script type="text/javascript" language="javascript">CM8ShowAd("column3_160x140_bottom");</script>
+                     <noscript>
+                        <a href="http://sage.checkm8.com/adam/ep/click/social_science_humanities.psychology_counseling.pss/Top?cat=social_science_humanities.psychology_counseling.pss">
+                           <img src="http://sage.checkm8.com/adam/noscript?cat=social_science_humanities.psychology_counseling.pss&amp;format=column3_160x40_bottom"
+                                nosend="1"
+                                border="0"
+                                align="left"
+                                alt="Advertisement" />
+                           </a>
+                        
+                     </noscript>
+                     
+                  </li>
+                  
+               </ul>
+               
+               
+            </div>
+            <div class="most-links-box js-marker">
+               
+               <div class="most-header">
+                  
+                  <h3>Most</h3>
+                  
+               </div>
+               
+               <ul>
+                  
+                  <li class="most-cur-sel">
+                     <h4>Most Read</h4>
+                     
+                     
+                     <div class="most-list">
+                        
+                        <ol>
+                           
+                           <li class="first-item"><a href="http://pss.sagepub.com/cgi/content/short/26/10/1567?rss=1&amp;ssource=mfr">Increased False-Memory Susceptibility After Mindfulness Meditation</a></li>
+                           <li><a href="http://pss.sagepub.com/cgi/content/short/26/12/1827?rss=1&amp;ssource=mfr">Replication in Psychological Science</a></li>
+                           <li><a href="http://pss.sagepub.com/cgi/content/short/0956797615616255v1?rss=1&amp;ssource=mfr">Quick Thinkers Are Smooth Talkers: Mental Speed Facilitates Charisma</a></li>
+                           <li><a href="http://pss.sagepub.com/cgi/content/short/22/11/1359?rss=1&amp;ssource=mfr">False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant</a></li>
+                           <li class="last-item"><a href="http://pss.sagepub.com/cgi/content/short/26/8/1201?rss=1&amp;ssource=mfr">Computer Game Play Reduces Intrusive Memories of Experimental Trauma via Reconsolidation-Update Mechanisms</a></li>
+                           
+                        </ol>
+                        <a href="http://pss.sagepub.com/reports/mfr1.dtl" class="view-all">» View all Most Read articles</a>
+                        
+                     </div>
+                     
+                     
+                  </li>
+                  
+                  <li>
+                     <h4>Most Cited</h4>
+                     
+                     
+                     <div class="most-list">
+                        
+                        <ol>
+                           
+                           <li class="first-item"><a href="http://pss.sagepub.com/cgi/content/short/22/11/1359?rss=1&amp;ssource=mfc">False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant</a></li>
+                           <li><a href="http://pss.sagepub.com/cgi/content/short/14/2/125?rss=1&amp;ssource=mfc">Fitness Effects on the Cognitive Function of Older Adults: A Meta-Analytic Study</a></li>
+                           <li><a href="http://pss.sagepub.com/cgi/content/short/4/6/385?rss=1&amp;ssource=mfc">A Neural System for Error Detection and Compensation</a></li>
+                           <li><a href="http://pss.sagepub.com/cgi/content/short/8/5/368?rss=1&amp;ssource=mfc">To See or not to See: The Need for Attention to Perceive Changes in Scenes</a></li>
+                           <li class="last-item"><a href="http://pss.sagepub.com/cgi/content/short/17/7/592?rss=1&amp;ssource=mfc">First Impressions: Making Up Your Mind After a 100-Ms Exposure to a Face</a></li>
+                           
+                        </ol>
+                        <a href="http://pss.sagepub.com/reports/mfc1.dtl" class="view-all">» View all Most Cited articles</a>
+                        
+                     </div>
+                     
+                     
+                  </li>
+                  
+               </ul>
+               
+            </div>
+            
+            
+            
+         </div>
+         <div id="footer">
+            
+            <div class="bar">
+               
+               <div class="footer-group footer-col-left">
+                  
+                  <ul class="button-list footer-buttons">
+                     
+                     <li class="first"><a href="/" title="HOME"><span>HOME</span></a></li>
+                     
+                     
+                     <li><a href="/content" title="ALL ISSUES"><span>ALL ISSUES</span></a></li>
+                     
+                     <li><a href="/feedback" title="FEEDBACK"><span>FEEDBACK</span></a></li>
+                     
+                     <li><a href="/site/subscriptions/" title="SUBSCRIBE"><span>SUBSCRIBE</span></a></li>
+                     
+                     <li class="img-button"><a href="/rss" title="RSS "><span>RSS </span>
+                           
+                           <img src="/shared/img/common/rss.gif" alt="rss" /></a>
+                        
+                        
+                        
+                     </li>
+                     
+                     <li><a href="/cgi/alerts" title="EMAIL ALERTS"><span>EMAIL ALERTS</span></a></li>
+                     
+                     		
+                     <li class="last last"><a href="/switch/help?fromid=pageid-login&amp;fromres=&amp;fromsite=Psychological%20Science&amp;is-sage-open=&amp;returnurl=http%3A%2F%2Fpss.sagepub.com%2Fcontent%2F26%2F8%2F1295.full.pdf">HELP</a></li>
+                     
+                  </ul>
+                  
+                  <div class="copyright">
+                     <a href="/site/misc/terms.xhtml">Copyright ©
+                        2016 by Association for Psychological Science</a>
+                     
+                  </div>
+                  
+               </div>
+               
+               <div class="footer-group footer-col-right">
+                  
+                  <ul class="issns">
+                     
+                     <li>
+                        <span>Print ISSN: </span>
+                        <span class="issn">0956-7976</span>
+                        
+                     </li>
+                     
+                     <li>
+                        <span>Online ISSN: </span>
+                        <span class="issn">1467-9280</span>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </div>
+               
+            </div>
+            
+            
+            <div class="block-2 sb-div"></div>
+            <script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ?
+      "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost +
+      "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script><script type="text/javascript"> try { var pageTrackerJournal = _gat._getTracker("UA-15495661-45"); pageTrackerJournal._trackPageview(); }
+      catch(err) {} </script><script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ?
+      "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost +
+      "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script><script type="text/javascript"> try { 
+      var pageTracker = _gat._getTracker("UA-7865995-1");
+      pageTracker._trackPageview(); } catch(err) {} </script>
+            
+            	  
+            </div><script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script><script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-189672-26");
+        pageTracker._setDomainName(".sagepub.com");
+        pageTracker._trackPageview();
+        } catch(err) {}
+        </script></div>
+   </body>
+</html>
