@@ -78,11 +78,11 @@
   <p>In this part of the study, we are interested in your general knowledge about personal finance. 
     You will see 5 questions about personal finance. Please answer them to the best of your knowledge.</p>.
   <br/>
-  <form id="questionaireform">
+  <form id="FLform">
   <p>Suppose you have $100 in a savings account earning 2 percent interest a year. After five years, how much would you have?<br>
-    <input type="radio" name="1savingsAccount" value="More than $102">More than $102<br>
-    <input type="radio" name="1savingsAccount" value="Exactly $102">Exactly $102<br>
-    <input type="radio" name="1savingsAccount" value="Less than $102">Less than $102<br>
+    <input type="radio" name="1savingsAccount" value="More than 102">More than $102<br>
+    <input type="radio" name="1savingsAccount" value="Exactly 102">Exactly $102<br>
+    <input type="radio" name="1savingsAccount" value="Less than 102">Less than $102<br>
     <input type="radio" name="1savingsAccount" value="Don't know">Don't know<br>
   </p>
   <p>Imagine that the interest rate on your savings account is 1 percent a year and inflation is 2 percent a year. After one year, would the money in the account buy more than it does today, exactly the same or less than today?<br>
@@ -91,11 +91,27 @@
     <input type="radio" name="2inflation" value="Less">Less<br>
     <input type="radio" name="2inflation" value="Don't know">Don't know<br>
   </p>
-  <button type="button" id="formsubmit">Submit</button>
+  <p>If interest rates rise, what will typically happen to bond prices? Rise, fall, stay the same, or is there no relationship<br>
+    <input type="radio" name="3interest" value="Rise">Rise<br>
+    <input type="radio" name="3interest" value="Fall">Fall<br>
+    <input type="radio" name="3interest" value="Stay the same">Stay the same<br>
+    <input type="radio" name="3interest" value="Don't know">Don't know<br>
+  </p>
+  <p>True or false: A 15-year mortgage typicaly requires higher monthly payments than a 30-year mortgage but the total interest over the life of the loan will be less.<br>
+    <input type="radio" name="4mortgage" value="True">True<br>
+    <input type="radio" name="4mortgage" value="False">False<br>
+    <input type="radio" name="4mortgage" value="Don't know">Don't know<br>
+  </p>
+  <p>True or false: Buying a single company's stock usually provides a safer return than a stock mutual fund.<br>
+    <input type="radio" name="5stocks" value="True">True<br>
+    <input type="radio" name="5stocks" value="False">False<br>
+    <input type="radio" name="5stocks" value="Don't know">Don't know<br>
+  </p>
+  <p id="FLQuizerror">Please answer all questions before continuing.</p>
+  <button type="button" id="FLformsubmit">Submit</button>
   </form>
-  <br/>
-  <p>*required</p>
-<div>
+  
+</div>
 
 <div class="slide" id="questionaire">
   <p>Last section! Please enter your responses below, and then click 'Submit'</p>.

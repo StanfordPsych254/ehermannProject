@@ -26,6 +26,9 @@ var nItems = items.length;
 var nQs = unshuffledFinanceTerms.length + personalFinanceQuestions.length;
 var personalFinanceFirst = Math.floor(Math.random()*2);
 
+// For debugging
+nQs = 1;
+
 var inductivePhrasing = shuffle(["conditional", "relative"])[0];
 
 var shuffledFinanceTerms = shuffle(unshuffledFinanceTerms);
@@ -258,10 +261,61 @@ var experiment = {
         if (qNumber + 1 < nQs) {
           experiment.trial(qNumber+1);
         } else {
-          experiment.questionaire();
+          experiment.FLQuiz();
         }
       }
     })
+  },
+
+  FLQuiz: function() {
+    //disable return key
+    $(document).keypress( function(event){
+     if (event.which == '13') {
+        event.preventDefault();
+      }
+    });
+    //progress bar complete
+    $('.bar').css('width', ( "100%"));
+    showSlide("FLQuiz");
+    $("#FLQuizerror").hide();
+    $("#FLformsubmit").click(function() {
+      
+      rawResponse = $("#FLform").serialize();
+      if (rawResponse.length < 77) {
+        $("#FLQuizerror").show();
+      } else {
+        // document.write(rawResponse);
+        pieces = rawResponse.split("&");
+        var q1 = pieces[0].split("=");
+        var q1Question = q1[0];
+        var q1Answer = q1[1];
+
+        var q2 = pieces[1].split("=");
+        var q2Question = q2[0];
+        var q2Answer = q2[1];
+
+        var q3 = pieces[2].split("=");
+        var q3Question = q3[0];
+        var q3Answer = q3[1];
+
+        var q4 = pieces[3].split("=");
+        var q4Question = q4[0];
+        var q4Answer = q4[1];
+
+        var q5 = pieces[4].split("=");
+        var q5Question = q5[0];
+        var q5Answer = q5[1];
+
+        experiment.data[q1Question] = q1Answer;
+        experiment.data[q2Question] = q2Answer;
+        experiment.data[q3Question] = q3Answer;
+        experiment.data[q4Question] = q4Answer;
+        experiment.data[q5Question] = q5Answer;
+
+        experiment.questionaire();
+        // setTimeout(function() { turk.submit(experiment.data) }, 1000);
+      }
+    });
   },
   
   questionaire: function() {
