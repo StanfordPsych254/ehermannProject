@@ -35,6 +35,15 @@ var inductivePhrasing = shuffle(["conditional", "relative"])[0];
 
 var shuffledFinanceTerms = shuffle(unshuffledFinanceTerms);
 
+var numTwoOrHigher = 0.0;
+var numThreeOrHigher = 0.0;
+var numFourOrHigher = 0.0;
+var numFiveOrHigher = 0.0;
+var numSixOrHigher = 0.0;
+var numSevenOrHigher = 0.0;
+
+var overclaimingScore = 0.0;
+
 
 function caps(a) {return a.substring(0,1).toUpperCase() + a.substring(1,a.length);}
 function uniform(a, b) { return ( (Math.random()*(b-a))+a ); }
@@ -100,6 +109,30 @@ var experiment = {
         $('input[name=rating]').attr('checked',false);
         var endTime = Date.now();
         var response = responseRaw.split("=")[1];
+
+        if ($.inArray(financeTerm, specials) != -1) {
+          // document.write(financeTerm);
+          intResponse = parseInt(response, 10);
+          if (intResponse > 1) {
+            numTwoOrHigher += 1/3.0;
+          }
+          if (intResponse > 2) {
+            numThreeOrHigher += 1/3.0;
+          }
+          if (intResponse > 3) {
+            numFourOrHigher += 1/3.0;
+          }
+          if (intResponse > 4) {
+            numFiveOrHigher += 1/3.0;
+          }
+          if (intResponse > 5) {
+            numSixOrHigher += 1/3.0;
+          }
+          if (intResponse > 6) {
+            numSevenOrHigher += 1/3.0;
+          }
+        }
+
         var rt = endTime - startTime;
         experiment.data.questions.push({
           qNumber:qNumber,
@@ -110,6 +143,9 @@ var experiment = {
         if (qNumber + 1 < nQs) {
           experiment.trial(qNumber+1);
         } else {
+          overclaimingScore = numTwoOrHigher+numThreeOrHigher+numFourOrHigher+numFiveOrHigher+numSixOrHigher+numSevenOrHigher;
+          overclaimingScore = overclaimingScore/6.0;
+          experiment.data["overclaimingScore"] = overclaimingScore;
           experiment.FLQuiz();
         }
       }
