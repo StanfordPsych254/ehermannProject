@@ -231,16 +231,20 @@ var experiment = {
     showSlide("questionaire");
     $("#formsubmit").click(function() {
       rawResponse = $("#questionaireform").serialize();
+      // document.write(rawResponse);
       pieces = rawResponse.split("&");
       var age = pieces[0].split("=")[1];
       var lang = pieces[1].split("=")[1];
-      var comments = pieces[2].split("=")[1];
+      var gender = pieces[2].split("=")[1];
+      var race = pieces[3].split("=")[1];
+      var comments = pieces[4].split("=")[1];
       if (lang.length > 0) {
         experiment.data["language"] = lang;
         experiment.data["comments"] = comments;
         experiment.data["age"] = age;
         experiment.data["version"] = "feb6";
-        experiment.data["phrasing"] = inductivePhrasing;
+        experiment.data["gender"] = gender;
+        experiment.data["race"] = race;
         showSlide("finished");
         setTimeout(function() { turk.submit(experiment.data) }, 1000);
       }
