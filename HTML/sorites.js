@@ -43,6 +43,7 @@ var numSixOrHigher = 0.0;
 var numSevenOrHigher = 0.0;
 
 var overclaimingScore = 0.0;
+var financialKnowledgeClaimScore = 0.0;
 
 
 function caps(a) {return a.substring(0,1).toUpperCase() + a.substring(1,a.length);}
@@ -132,6 +133,10 @@ var experiment = {
             numSevenOrHigher += 1/3.0;
           }
         }
+        if (personalFinanceQuestion != "N/A") {
+          intResponse = parseInt(response, 10);
+          financialKnowledgeClaimScore += intResponse/2.0;
+        }
 
         var rt = endTime - startTime;
         experiment.data.questions.push({
@@ -146,6 +151,7 @@ var experiment = {
           overclaimingScore = numTwoOrHigher+numThreeOrHigher+numFourOrHigher+numFiveOrHigher+numSixOrHigher+numSevenOrHigher;
           overclaimingScore = overclaimingScore/6.0;
           experiment.data["overclaimingScore"] = overclaimingScore;
+          experiment.data["personalFinanceClaimScore"] = financialKnowledgeClaimScore;
           experiment.FLQuiz();
         }
       }
