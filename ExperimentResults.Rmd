@@ -12,6 +12,8 @@ summary(cars)
 data <- read.csv("/Users/Eric/Desktop/Psych254/ehermannProject/Batch_122585_batch_results.csv")
 df <- data.frame(data$Answer.personalFinanceClaimScore, data$Answer.overclaimingScore, data$Answer.FLQuizScore)
 plot(df$data.Answer.personalFinanceClaimScore, df$data.Answer.overclaimingScore)
+data.lm = lm(formula = df$data.Answer.overclaimingScore ~ df$data.Answer.personalFinanceClaimScore, data = df)
+summary(data.lm)
 ```
 
 You can also embed plots, for example:
