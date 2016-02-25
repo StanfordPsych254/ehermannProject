@@ -152,6 +152,7 @@ var experiment = {
           overclaimingScore = overclaimingScore/6.0;
           experiment.data["overclaimingScore"] = overclaimingScore;
           experiment.data["personalFinanceClaimScore"] = financialKnowledgeClaimScore;
+          experiment.data["personalFinanceFirst"] = personalFinanceFirst;
           experiment.FLQuiz();
         }
       }
