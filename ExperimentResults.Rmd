@@ -3,23 +3,66 @@ title: "ExperimentResults"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This R-Markdown document does the data analysis for my replication study.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
+Read in the initial data and make a plot
 ```{r}
-summary(cars)
-data <- read.csv("/Users/Eric/Desktop/Psych254/ehermannProject/Batch_122585_batch_results.csv")
-df <- data.frame(data$Answer.personalFinanceClaimScore, data$Answer.overclaimingScore, data$Answer.FLQuizScore)
+data <- read.csv("/Users/Eric/Desktop/Psych254/ehermannProject/Batch_123323_batch_results.csv")
+df <- data.frame(data$Answer.personalFinanceClaimScore, data$Answer.overclaimingScore, data$Answer.FLQuizScore, data$Answer.accuracy, data$Answer.personalFinanceFirst)
 plot(df$data.Answer.personalFinanceClaimScore, df$data.Answer.overclaimingScore)
-data.lm = lm(formula = df$data.Answer.overclaimingScore ~ df$data.Answer.personalFinanceClaimScore, data = df)
+```
+
+
+Get the mean and SD of people's claimed knowledge about personal finance.
+```{r}
+mean(df$data.Answer.personalFinanceClaimScore)
+sd(df$data.Answer.personalFinanceClaimScore)
+```
+
+Get b, t value and p for relationship between claimed financial knowledge and overclaiming
+```{r}
+data.lm = lm(formula = df$data.Answer.overclaimingScore ~ df$data.Answer.personalFinanceClaimScore + df$data.Answer.accuracy, data = df)
 summary(data.lm)
 ```
 
-You can also embed plots, for example:
 
-```{r, echo=FALSE}
-plot(cars)
+Get mean and SD for data when personal financial knowledge questions are before the 15 items, and vice versa.
+```{r}
+personalFinanceFirstData <- df[df$data.Answer.personalFinanceFirst == 1,]
+itemQuestionsFirstData <- df[df$data.Answer.personalFinanceFirst == 0,]
+mean(personalFinanceFirstData$data.Answer.overclaimingScore)
+sd(personalFinanceFirstData$data.Answer.overclaimingScore)
+mean(itemQuestionsFirstData$data.Answer.overclaimingScore)
+sd(itemQuestionsFirstData$data.Answer.overclaimingScore)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Get slope, t value and p for relationship between order and overclaiming
+```{r}
+order.lm = lm(formula = df$data.Answer.overclaimingScore ~ df$data.Answer.personalFinanceFirst, data = df)
+summary(order.lm)
+```
+
+Get slope, t value and p for data when personal finance questions are asked first only.
+```{r}
+PFFirst.lm = lm(formula = personalFinanceFirstData$data.Answer.overclaimingScore ~ personalFinanceFirstData$data.Answer.personalFinanceClaimScore + personalFinanceFirstData$data.Answer.accuracy, data = personalFinanceFirstData)
+summary(PFFirst.lm)
+```
+
+Get slope, t value and p for data when 15 item questions are asked first only.
+```{r}
+itemsFirst.lm = lm(formula = itemQuestionsFirstData$data.Answer.overclaimingScore ~ itemQuestionsFirstData$data.Answer.personalFinanceClaimScore + itemQuestionsFirstData$data.Answer.accuracy, data = personalFinanceFirstData)
+summary(itemsFirst.lm)
+```
+
+Get slope, t value and p for relationship between genuine financial knowledge and overclaiming
+```{r}
+genuineKnowledge.lm = lm(formula = df$data.Answer.overclaimingScore ~ df$data.Answer.FLQuizScore, data = df)
+summary(genuineKnowledge.lm)
+```
+
+Get slope, t value and p for relationship between genuine financial knowledge and perceived financial knowledge
+```{r}
+perceivedKnowledge.lm = lm(formula = df$data.Answer.personalFinanceClaimScore ~ df$data.Answer.FLQuizScore, data = df)
+summary(perceivedKnowledge.lm)
+```
