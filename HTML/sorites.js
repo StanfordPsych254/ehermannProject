@@ -42,6 +42,13 @@ var numFiveOrHigher = 0.0;
 var numSixOrHigher = 0.0;
 var numSevenOrHigher = 0.0;
 
+var normalNumTwoOrHigher = 0.0;
+var normalNumThreeOrHigher = 0.0;
+var normalNumFourOrHigher = 0.0;
+var normalNumFiveOrHigher = 0.0;
+var normalNumSixOrHigher = 0.0;
+var normalNumSevenOrHigher = 0.0;
+
 var overclaimingScore = 0.0;
 var financialKnowledgeClaimScore = 0.0;
 
@@ -132,6 +139,26 @@ var experiment = {
           if (intResponse > 6) {
             numSevenOrHigher += 1/3.0;
           }
+        } else if ($.inArray(financeTerm, unshuffledFinanceTerms) != -1) {
+          intResponse = parseInt(response, 10);
+          if (intResponse > 1) {
+            normalNumTwoOrHigher += 1/12.0;
+          }
+          if (intResponse > 2) {
+            normalNumThreeOrHigher += 1/12.0;
+          }
+          if (intResponse > 3) {
+            normalNumFourOrHigher += 1/12.0;
+          }
+          if (intResponse > 4) {
+            normalNumFiveOrHigher += 1/12.0;
+          }
+          if (intResponse > 5) {
+            normalNumSixOrHigher += 1/12.0;
+          }
+          if (intResponse > 6) {
+            normalNumSevenOrHigher += 1/12.0;
+          }
         }
         if (personalFinanceQuestion != "N/A") {
           intResponse = parseInt(response, 10);
@@ -150,7 +177,11 @@ var experiment = {
         } else {
           overclaimingScore = numTwoOrHigher+numThreeOrHigher+numFourOrHigher+numFiveOrHigher+numSixOrHigher+numSevenOrHigher;
           overclaimingScore = overclaimingScore/6.0;
+          normalItemScore = normalNumTwoOrHigher+normalNumThreeOrHigher+normalNumFourOrHigher+normalNumFiveOrHigher+normalNumSixOrHigher+normalNumSevenOrHigher;
+          normalItemScore = normalItemScore/6.0;
           experiment.data["overclaimingScore"] = overclaimingScore;
+          experiment.data["normalItemScore"] = normalItemScore;
+          experiment.data["accuracy"] = normalItemScore - overclaimingScore;
           experiment.data["personalFinanceClaimScore"] = financialKnowledgeClaimScore;
           experiment.data["personalFinanceFirst"] = personalFinanceFirst;
           experiment.FLQuiz();
