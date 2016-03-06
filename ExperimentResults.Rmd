@@ -55,6 +55,8 @@ Quoting directly from the original study, the personal finance questions were as
 And the measure of overclaiming was based on 15 items, again quoting here from the original study:
 “Twelve of the 15 were real terms (tax bracket, fixed-rate mortgage, home equity, revolving credit, vesting, retirement, stock options, inflation, private equity fund, interest rate, Roth IRA, whole life insurance) collected from various finance Web sites, and 3 were nonexistent foils invented by the researchers (pre-rated stocks, fixed-rate deduction, annualized credit).”
 
+The experiment itself is hosted on Stanford AFS and can be viewed at the following link: http://stanford.edu/~ehermann/HTML/sorites.html
+
 ##Procedure
 
 Quoting directly from the original study:				
@@ -102,28 +104,31 @@ Data preparation following the analysis plan.
 
 The analyses the authors did were as follows:
 
-Read in the initial data and make a plot
+Read in the initial data
 ```{r}
 df <- read.csv("/Users/Eric/Desktop/Psych254/ehermannProject/Batch_123323_batch_results.csv")
-df <- rename(df, pfClaimScore=Answer.personalFinanceClaimScore, overclaimScore=Answer.overclaimingScore, flQuizScore=Answer.FLQuizScore, accuracy=Answer.accuracy, pfFirst=Answer.personalFinanceFirst)
-plot(df$pfClaimScore, df$overclaimScore)
+df <- df %>% rename(
+  pfClaimScore=Answer.personalFinanceClaimScore,
+  overclaimScore=Answer.overclaimingScore,
+  flQuizScore=Answer.FLQuizScore, accuracy=Answer.accuracy,
+  pfFirst=Answer.personalFinanceFirst)
 ```
 
 
-Get the mean and SD of people's claimed knowledge about personal finance.
+First, comparing the mean and SD of people's claimed knowledge about personal finance to the original experimental results (M=4.43, SD=1.17).
 ```{r}
 mean(df$pfClaimScore)
 sd(df$pfClaimScore)
 ```
 
-Get b, t value and p for relationship between claimed financial knowledge and overclaiming
+Next, compare the b, t value and p for relationship between claimed financial knowledge and overclaiming to that of the original experiment. We want to see first if the results are statistically significant, and second how closely the slope matches that of the original study (b in the original study was 0.10). Note that the original had four times the number of participants as this replication, so we wouldn't expect the t and p values to match the original values (t(199)=13.07, p<0.001).
 ```{r}
-data.lm = lm(formula = df$overclaimScore ~ df$pfClaimScore + df$accuracy, data = df)
+data.lm = lm(formula = overclaimScore ~ pfClaimScore + accuracy, data = df)
 kable(summary(data.lm)$coefficients)
 ```
 
 
-Get mean and SD for data when personal financial knowledge questions are before the 15 items, and vice versa.
+Compare the mean and SD for data when personal financial knowledge questions are before the 15 items and vice versa, to the original study.  When personal finance questions were first the original study found M=0.34 and SD=0.24, and when the 15 items are first the values were M=0.27 and SD=0.21.
 ```{r}
 personalFinanceFirstData <- df[df$pfFirst == 1,]
 itemQuestionsFirstData <- df[df$pfFirst == 0,]
@@ -133,33 +138,31 @@ mean(itemQuestionsFirstData$overclaimScore)
 sd(itemQuestionsFirstData$overclaimScore)
 ```
 
-Get slope, t value and p for relationship between order and overclaiming
+The original study found that the effect of order on overclaiming was statistically significant (t(200)=2.21, p<0.05). Here, we're measuring the t value and p for relationship between order and overclaiming to see if it is also statistically significant.
 ```{r}
-order.lm = lm(formula = df$overclaimScore ~ df$pfFirst, data = df)
+order.lm = lm(formula = overclaimScore ~ pfFirst, data = df)
 kable(summary(order.lm)$coefficients)
 ```
 
-Get slope, t value and p for data when personal finance questions are asked first only.
+The original study found that regardless of whether personal finance questions or the 15 items were asked first, self-perceived knowledge still affected overclaiming.  Here we're looking at the slope, t value and p for both cases and seeing if we stil achieved a statistically significant result.  The original study found that this was the case, with b=0.12, t(98)=9.83, p<0.001 for when the personal finance questions were first and b=0.09, t(98)=8.47, and p<0.001 for the 15 item questions first.
 ```{r}
-PFFirst.lm = lm(formula = personalFinanceFirstData$overclaimScore ~ personalFinanceFirstData$pfClaimScore + personalFinanceFirstData$accuracy, data = personalFinanceFirstData)
+PFFirst.lm = lm(formula = overclaimScore ~ pfClaimScore + accuracy, data = personalFinanceFirstData)
 kable(summary(PFFirst.lm)$coefficients)
-```
 
-Get slope, t value and p for data when 15 item questions are asked first only.
-```{r}
-itemsFirst.lm = lm(formula = itemQuestionsFirstData$overclaimScore ~ itemQuestionsFirstData$pfClaimScore + itemQuestionsFirstData$accuracy, data = personalFinanceFirstData)
+itemsFirst.lm = lm(formula = overclaimScore ~ pfClaimScore + accuracy, data = itemQuestionsFirstData)
 kable(summary(itemsFirst.lm)$coefficients)
 ```
 
-Get slope, t value and p for relationship between genuine financial knowledge and overclaiming
+
+The original study also found a relationship between genuine knowledge and overclaiming (b=0.05, t(199)=4.92, p<0.001), which is being measured here.
 ```{r}
-genuineKnowledge.lm = lm(formula = df$overclaimScore ~ df$flQuizScore, data = df)
+genuineKnowledge.lm = lm(formula = overclaimScore ~ flQuizScore, data = df)
 kable(summary(genuineKnowledge.lm)$coefficients)
 ```
 
-Get slope, t value and p for relationship between genuine financial knowledge and perceived financial knowledge
+It also found a positive correlation between self-perceived knowledge and genuine knowledge, which is being measured here.
 ```{r}
-perceivedKnowledge.lm = lm(formula = df$pfClaimScore ~ df$flQuizScore, data = df)
+perceivedKnowledge.lm = lm(formula = pfClaimScore ~ flQuizScore, data = df)
 kable(summary(perceivedKnowledge.lm)$coefficients)
 ```
 
