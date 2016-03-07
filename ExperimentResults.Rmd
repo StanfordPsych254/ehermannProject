@@ -112,30 +112,16 @@ df <- df %>% rename(
   overclaimScore=Answer.overclaimingScore,
   flQuizScore=Answer.FLQuizScore, accuracy=Answer.accuracy,
   pfFirst=Answer.personalFinanceFirst)
+
+personalFinanceFirstData <- df[df$pfFirst == 1,]
+itemQuestionsFirstData <- df[df$pfFirst == 0,]
 ```
 
-
-First, comparing the mean and SD of people's claimed knowledge about personal finance to the original experimental results (M=4.43, SD=1.17).
-```{r}
-mean(df$pfClaimScore)
-sd(df$pfClaimScore)
-```
 
 Next, compare the b, t value and p for relationship between claimed financial knowledge and overclaiming to that of the original experiment. We want to see first if the results are statistically significant, and second how closely the slope matches that of the original study (b in the original study was 0.10). Note that the original had four times the number of participants as this replication, so we wouldn't expect the t and p values to match the original values (t(199)=13.07, p<0.001).
 ```{r}
 data.lm = lm(formula = overclaimScore ~ pfClaimScore + accuracy, data = df)
 kable(summary(data.lm)$coefficients)
-```
-
-
-Compare the mean and SD for data when personal financial knowledge questions are before the 15 items and vice versa, to the original study.  When personal finance questions were first the original study found M=0.34 and SD=0.24, and when the 15 items are first the values were M=0.27 and SD=0.21.
-```{r}
-personalFinanceFirstData <- df[df$pfFirst == 1,]
-itemQuestionsFirstData <- df[df$pfFirst == 0,]
-mean(personalFinanceFirstData$overclaimScore)
-sd(personalFinanceFirstData$overclaimScore)
-mean(itemQuestionsFirstData$overclaimScore)
-sd(itemQuestionsFirstData$overclaimScore)
 ```
 
 The original study found that the effect of order on overclaiming was statistically significant (t(200)=2.21, p<0.05). Here, we're measuring the t value and p for relationship between order and overclaiming to see if it is also statistically significant.
@@ -169,7 +155,20 @@ kable(summary(perceivedKnowledge.lm)$coefficients)
 
 ###Exploratory analyses
 
-Any follow-up analyses desired (not required).
+First, comparing the mean and SD of people's claimed knowledge about personal finance to the original experimental results (M=4.43, SD=1.17).
+```{r}
+mean(df$pfClaimScore)
+sd(df$pfClaimScore)
+```
+
+Compare the mean and SD for data when personal financial knowledge questions are before the 15 items and vice versa, to the original study.  When personal finance questions were first the original study found M=0.34 and SD=0.24, and when the 15 items are first the values were M=0.27 and SD=0.21.
+```{r}
+mean(personalFinanceFirstData$overclaimScore)
+sd(personalFinanceFirstData$overclaimScore)
+mean(itemQuestionsFirstData$overclaimScore)
+sd(itemQuestionsFirstData$overclaimScore)
+```
+
 
 ##Discussion
 
