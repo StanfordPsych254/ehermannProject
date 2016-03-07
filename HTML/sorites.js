@@ -22,11 +22,14 @@ var unshuffledFinanceTerms = ["pre-rated stocks", "fixed-rate deduction", "annua
 
 var specials = ["pre-rated stocks", "fixed-rate deduction", "annualized credit"];
 
+// var unshuffledFinanceTerms = ["cats"]
+
 var nEps = epsilonDeviations.length;
 var nVals = valueDeviations.length;
 var nItems = items.length;
 var nQs = unshuffledFinanceTerms.length + personalFinanceQuestions.length;
 var personalFinanceFirst = Math.floor(Math.random()*2);
+
 
 // For debugging
 // nQs = 1;
@@ -284,7 +287,7 @@ var experiment = {
         experiment.data["gender"] = gender;
         experiment.data["race"] = race;
         showSlide("finished");
-        setTimeout(function() { turk.submit(experiment.data) }, 1000);
+        setTimeout(function() { turk.submit(experiment.data) }, 100);
       }
     });
   }
