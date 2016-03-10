@@ -1,0 +1,207 @@
+---
+title: "Replication of “When Knowledge Knows No Bounds” by Amir, Rosenzweig, & Dunning (2015, Psychological Science)"
+author: "Eric Hermann ehermann@stanford.edu"
+date: '`r Sys.Date()`'
+output: html_document
+---
+
+<style type="text/css">
+body, td {
+   font-size: 14px;
+}
+code {
+  font-size: 11px;
+}
+pre {
+  font-size: 11px;
+}
+</style>
+
+```{r, echo = FALSE, include = FALSE}
+rm(list=ls())
+suppressPackageStartupMessages(c("dplyr","tidyr","ggplot2","lme4"))
+library(knitr)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(lme4)
+
+opts_chunk$set(fig.width=8, fig.height=5, 
+                      echo=TRUE, warning=FALSE, message=FALSE, cache=TRUE)
+theme_set(theme_bw())
+```
+##Introduction
+
+This study was an attempt to replicate part 1b of a 2015 study by Amir, Rosenweig & Dunning about how perceived knowledge about a particular field affects overclaiming about that field.  The study asked people to rate their knowledge about finances, and then asked them to rate their knowledge about a set of financial terms, some of which were made-up terms altogether.  The participants then took a general financial knowledge quiz.  It found that people who self-rated their financial knowledge to be higher claimed knowledge of non-existent financial terms at a higher rate than people who self-rated their financial knowledge to be low, and that this phenomenon was independent of actual financial knowledge of the participant.  The authors generalized this phenomenon to say that people who feel more knowledgeable in a field are more likely to overclaim in that field.
+The goal of this replication was to see if this phenomenon was reproducible or not.  Specifically, using the same questions and methodology, the goal was to see if the data matched the original data in the Amir et al. study.
+
+##Methods
+
+###Power Analysis
+
+The original study used a regression analysis with one predictor (which is the same as a correlation test) to calculate effect size and power.  The original effect size found by the authors was 0.506, and with 200 participants the study had a power of 0.9999999. I'm replicating the study with 50 participants, with an expected power of 0.9309 if the effect size holds. With 50 participants, the effect size could be as small as 0.4 and the power would still be above 80 percent.
+
+###Planned Sample
+
+My sample will be 50 American Mechanical Turkers who are fluent or bilingual English speakers.  No other specific requirements seem necessary in limiting the sample.
+
+##Materials
+
+Materials for the study can be found here: https://osf.io/dphkz/ in Study1a_Materials and Study1b_Materials.  The questions will be asked in a survey format using a Likert Scale, all written in HTML/Javascript.
+
+Quoting directly from the original study, the personal finance questions were as follows:
+
+“The questions on personal finance were 'In general, how knowledgeable would you say you are about personal finance?' (1 = not knowledgeable at all, 7 = extremely knowledgeable) and 'How would you rate your general knowledge of personal finance compared to the average American?' (1 = much less knowledgeable, 7 = much more knowledgeable).”
+
+And the measure of overclaiming was based on 15 items, again quoting here from the original study:
+
+“Twelve of the 15 were real terms (tax bracket, fixed-rate mortgage, home equity, revolving credit, vesting, retirement, stock options, inflation, private equity fund, interest rate, Roth IRA, whole life insurance) collected from various finance Web sites, and 3 were nonexistent foils invented by the researchers (pre-rated stocks, fixed-rate deduction, annualized credit).”
+
+The experiment itself is hosted on Stanford AFS and can be viewed at the following link: http://stanford.edu/~ehermann/HTML/expertiseReplication.html
+
+##Procedure
+
+Quoting directly from the original study:
+
+“After providing informed consent, participants rated their general knowledge of personal finance and completed the overclaiming task in counterbalanced order...
+					
+The overclaiming task was modeled after the Overclaiming Questionnaire (Paulhus et al., 2003). Participants were asked to rate their knowledge of various personal-finance-related terms:
+					
+We are interested in common knowledge about personal finance. You will see 15 terms related to personal finance. Please rate your knowledge about each term by choosing the appropriate number from 1 (never heard of it) to 7 (very knowledgeable).
+					
+The 15 items were presented one at a time in random order... Finally, participants filled out a demographic questionnaire and provided information for payment.
+					
+The procedure in Study 1b was identical to that in Study 1a, except that participants also completed a widely used financial-literacy quiz (FINRA Investor Education Foundation, 2009; Lusardi & Mitchell, 2011) after completing the other two tasks. The quiz included five questions assessing financial capability (e.g., 'A 15-year mortgage typically requires higher monthly payments than a 30-year mortgage, but the total interest paid over the life of the loan will be less'; response options: 'true,' 'false,' and 'don’t know').”
+
+The only difference between my study and theirs is that I plan to just use Study 1b, since it includes Study 1a in it and also provides more information on the actual financial knowledge of the participants.  This is to save both money and resources.
+
+###Analysis Plan
+
+I’ll measure overclaiming in the same way that the original study did:
+
+“Overclaiming was measured by calculating the false alarm rate, which is the proportion of nonexistent foils about which a participant claimed knowledge. We averaged the false alarm rates for each of the six potential knowledge cutoff points (i.e., we computed the proportion of foils rated as 2 or higher, the proportion of foils rated as 3 or higher, and so on for 4, 5, 6, and 7, and then averaged these proportions), which resulted in an overclaiming value ranging from 0 to 1.”
+
+I’ll also measure accuracy in the same way that the original study did:
+	
+“Accuracy was obtained by subtracting the averaged false alarm rate from the averaged hit rate (i.e., the proportion of real items about which each participant claimed knowledge, averaged across all six potential cutoff points).”
+
+Finally, I’ll look at correlation between actual financial knowledge and perceived financial knowledge, based on scores on the five question survey compared with the participants’ rating of their financial knowledge based on their 1 to 7 rating of their knowledge.  This is the same method the original study used.
+
+###Differences from Original Study
+
+Differences will be relatively minimal between the replication and the original, because both used a survey format and both took advantage of Mechanical Turk for the study.  The replication will only be replicating Study 1b, for the reasons mentioned above.
+
+###(Post Data Collection) Methods Addendum
+
+###Actual Sample
+
+The sample matches what was described in the analysis plan, with 50 American mTurkers participating.
+
+###Differences from pre-data collection methods plan
+
+None
+
+
+##Results
+
+###Data preparation
+
+Read in the initial data
+```{r}
+df <- read.csv("/Users/Eric/Desktop/Psych254/ehermannProject/Batch_2303798_batch_results.csv")
+df <- df %>% rename(
+  pfClaimScore=Answer.personalFinanceClaimScore,
+  overclaimScore=Answer.overclaimingScore,
+  flQuizScore=Answer.FLQuizScore, accuracy=Answer.accuracy,
+  pfFirst=Answer.personalFinanceFirst)
+
+personalFinanceFirstData <- df[df$pfFirst == 1,]
+itemQuestionsFirstData <- df[df$pfFirst == 0,]
+```
+
+###Confirmatory analysis
+
+The analyses the authors did were as follows:
+
+First, comparing the mean and SD of people's claimed knowledge about personal finance to the original experimental results (M=4.43, SD=1.17).
+```{r}
+mean(df$pfClaimScore)
+sd(df$pfClaimScore)
+```
+
+Compare the mean and SD for data when personal financial knowledge questions are before the 15 items and vice versa, to the original study.  When personal finance questions were first the original study found M=0.34 and SD=0.24, and when the 15 items are first the values were M=0.27 and SD=0.21.
+```{r}
+mean(personalFinanceFirstData$overclaimScore)
+sd(personalFinanceFirstData$overclaimScore)
+mean(itemQuestionsFirstData$overclaimScore)
+sd(itemQuestionsFirstData$overclaimScore)
+```
+
+
+Test the relationship between claimed financial knowledge and overclaiming to that of the original experiment. We want to see first if the results are statistically significant, and second how closely the slope matches that of the original study (b in the original study was 0.10). Note that the original had four times the number of participants as this replication, so we wouldn't expect the t and p values to match the original values (t(199)=13.07, p<0.001).
+```{r}
+data.lm = lm(formula = overclaimScore ~ pfClaimScore + accuracy, data = df)
+kable(summary(data.lm)$coefficients)
+```
+
+The original study found that the effect of order on overclaiming was statistically significant (t(200)=2.21, p<0.05). Here, we're measuring the relationship between order and overclaiming to see if it is also statistically significant.
+```{r}
+order.lm = lm(formula = overclaimScore ~ pfFirst, data = df)
+kable(summary(order.lm)$coefficients)
+```
+
+The original study found that regardless of whether personal finance questions or the 15 items were asked first, self-perceived knowledge still affected overclaiming.  Here we're looking at the relationship between self-perceived knowledge and overclaiming for both cases and seeing if we stil achieved a statistically significant result.  The original study found that this was the case, with b=0.12, t(98)=9.83, p<0.001 for when the personal finance questions were first and b=0.09, t(98)=8.47, and p<0.001 for the 15 item questions first.
+```{r}
+PFFirst.lm = lm(formula = overclaimScore ~ pfClaimScore + accuracy, data = personalFinanceFirstData)
+kable(summary(PFFirst.lm)$coefficients)
+
+itemsFirst.lm = lm(formula = overclaimScore ~ pfClaimScore + accuracy, data = itemQuestionsFirstData)
+kable(summary(itemsFirst.lm)$coefficients)
+```
+
+
+The original study found a relationship between genuine knowledge and overclaiming (b=0.05, t(199)=4.92, p<0.001), which is being measured here.
+```{r}
+genuineKnowledge.lm = lm(formula = overclaimScore ~ flQuizScore, data = df)
+kable(summary(genuineKnowledge.lm)$coefficients)
+```
+
+It also found a positive correlation between self-perceived knowledge and genuine knowledge, which is being measured here.
+```{r}
+perceivedKnowledge.lm = lm(formula = pfClaimScore ~ flQuizScore, data = df)
+kable(summary(perceivedKnowledge.lm)$coefficients)
+```
+
+Finally, the authors found that even when controlling for general knowledge, self-perceived knowledge still predicts overclaiming (b=0.09, t(198)=11.73, p<0.001). Here that relationship is being tested.
+```{r}
+flEffects.lm = lm(formula = overclaimScore ~ pfClaimScore + accuracy + flQuizScore, data = df)
+kable(summary(flEffects.lm)$coefficients)
+```
+
+###Exploratory analyses
+
+The authors didn't include any figures in this part of the original paper, but a simple scatter plot might help in understanding the data.
+```{r}
+plot(df$pfClaimScore, df$overclaimScore)
+```
+
+Analysis to look at the relationship between order and the personal finance claim score to see if the combination of the two has effects on overclaiming.
+```{r}
+accuracy.lm = lm(formula = overclaimScore ~ pfClaimScore*pfFirst, data = df)
+kable(summary(accuracy.lm)$coefficients)
+
+```
+
+##Discussion
+
+###Summary of Replication Attempt
+
+The experiment did replicate the original result, showing that perceived financial knowledge did predict overclaiming (b=0.085, t(49)=6.03, p<0.001). The slope of the regression was slightly different, as in the original study it was 0.10, but the effect was still there.
+
+Additionally, the experiment confirmed that regardless of whether the personal finance questions were asked first or the overclaiming questions were first, the effect persisted (for personal finance first, b=0.076, t(27)=3.59, p=.001, and for overclaiming first, b=0.10, t(21)=6.04, p<0.001). The study also confirmed that the effect was independent of genuine financial knowledge (when genuine knowlege was a factor in the model, self perceived knowledge was still highly predictive of overclaiming b=0.082, t(49)=5.86, p<0.001).
+
+Other secondary findings of the original study were found to be inconclusive, which may be due to the smaller sample size. For example, this study did not find a statistically significant relationship between genuine knowledge and overclaiming, and also failed to find a statistically significant relationship between perceived financial knowledge and genuine financial knowledge. This study also was inconclusive on whether presentation order (perceived financial knowledge questions first or overclaiming questions first) has a direct effect on overclaiming score.
+
+###Commentary
+
+Overall, it seems like the replication has confirmed the original findings of Atir et al.  Some of the secondary findings were unable to be confirmed, like a relationship between order of question presentation and overclaiming, a relationship between genuine financial knowledge and overclaiming, and a relationship between perceived financial knowledge and overclaiming, but this is likely to have been a result of the smaller sample size. The main findings of the study, namely that overclaiming is predicted by perceived financial knowledge, regardless of order and regardless of genuine financial knowledge, were replicated with extremely high confidence.
