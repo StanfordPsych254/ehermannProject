@@ -182,7 +182,7 @@ kable(summary(flEffects.lm)$coefficients)
 
 The authors didn't include any figures in this part of the original paper, but a simple scatter plot might help in understanding the data.
 ```{r}
-plot(df$pfClaimScore, df$overclaimScore)
+plot(df$pfClaimScore, df$overclaimScore, main="Overclaiming Score vs Perceived Financial Knowledge", xlab="Perceived Financial Knowledge", ylab="Overclaiming Score")
 ```
 
 Analysis to look at the relationship between order and the personal finance claim score to see if the combination of the two has effects on overclaiming.
